@@ -43,3 +43,47 @@ else:
       print("num_1 is greater than num_2.")
    else:
       print("num_1 is less than num_2.")  
+
+# exercise 2 
+#1
+score = int(input("Enter score (0-100): "))
+
+if 90 <= score <= 100:
+    grade = "A"
+elif 80 <= score <= 89:
+    grade = "B"
+elif 70 <= score <= 79:
+    grade = "C"
+elif 60 <= score <= 69:
+    grade = "D"
+else:
+    grade = "F"
+
+print("Grade:", grade)
+
+#2
+month = input("Enter month name: ")
+
+if month in ("september", "october", "november"):
+    print("The season is Autumn.")
+elif month in ("december", "january", "february"):
+    print("The season is Winter.")
+elif month in ("march", "april", "may"):
+    print("The season is Spring.")
+elif month in ("june", "july", "august"):
+    print("The season is Summer.")
+else:
+    print("Invalid month name.") 
+
+#3
+fruits = ["banana", "orange", "mango", "lemon"]
+
+# Get input and normalize it to lowercase
+new_fruit = input("Enter a fruit name: ").strip().lower()
+
+# Check existence and modify list
+if new_fruit in fruits:
+    print("That fruit already exist in the list")
+else:
+    fruits.append(new_fruit)
+    print("Modified list:", fruits)
