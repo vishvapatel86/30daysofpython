@@ -87,3 +87,45 @@ if new_fruit in fruits:
 else:
     fruits.append(new_fruit)
     print("Modified list:", fruits)
+
+# exercise 3 
+
+person={
+    'first_name': 'urvi',
+    'last_name': 'patel',
+    'age': 22,
+    'country': 'india',
+    'is_married': False,
+    'skills': ['JavaScript', 'React', 'Node', 'MongoDB', 'Python'],
+    'address': {
+        'street': 'vatika road ',
+        'zipcode': '02220'
+    }
+    }
+if 'skills' in person :
+   skills_list = person['skills']
+   middle_index = len(skills_list)//2
+   print("middle skill:", skills_list[middle_index])
+
+if 'skills' in person:
+   has_python  = 'Python' in person['skills']
+   print(f"has Python skill:{has_python}")
+
+if 'skills' in person:
+   skills = person['skills']
+if skills == {'JavaScript', 'React'}:
+    print('He is a front end developer')
+elif {'Node', 'Python', 'MongoDB'}.issubset(skills):
+    print('He is a backend developer')
+elif {'React', 'Node', 'MongoDB'}.issubset(skills):
+    print('He is a fullstack developer')
+else:
+    print('unknown title')
+
+
+if person['is_married'] == False and person['country'] == 'india':
+    first = person['first_name']
+    last = person['last_name']
+    country = person['country']
+    print(first + " " + last + " lives in " + country + ". she is not married.")
+    
