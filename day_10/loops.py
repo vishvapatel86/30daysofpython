@@ -49,4 +49,27 @@ for i in range(101):
     if i % 2 != 0:
         print(i, end=" ")
   
-  
+# exercise 2
+# Initialize sum variable
+total_sum = 0
+
+# Loop from 0 to 100 inclusive
+for i in range(101):
+    total_sum += i
+
+# Print the final result
+print(f"The sum of all numbers is {total_sum}.")
+
+# Initialize sum variables
+sum_evens = 0
+sum_odds = 0
+
+# Loop from 0 to 100 inclusive
+for i in range(101):
+    if i % 2 == 0:
+        sum_evens += i
+    else:
+        sum_odds += i
+
+# Print the final results
+print(f"The sum of all evens is {sum_evens}. And the sum of all odds is {sum_odds}.")
