@@ -73,3 +73,25 @@ for i in range(101):
 
 # Print the final results
 print(f"The sum of all evens is {sum_evens}. And the sum of all odds is {sum_odds}.")
+
+# exercise 3
+# Assuming countries list is imported from countries 
+from countries import countries
+
+land_countries = []
+for country in countries:
+    if "land" in country.lower():
+        land_countries.append(country)
+
+print("Countries with 'land':", land_countries)
+
+
+fruits = ['banana', 'orange', 'mango', 'lemon']
+reversed_fruits = []
+
+# Loop backwards using range
+for i in range(len(fruits) - 1, -1, -1):
+    reversed_fruits.append(fruits[i])
+
+print("Reversed fruits:", reversed_fruits)
+
