@@ -1,3 +1,6 @@
+#Day 1 : hello world
+#exercise
+
 print("hello world")
 print("addition:", 3 + 4)
 print("subtraction:", 3 - 4)
@@ -20,6 +23,7 @@ print(type({1,2,3,4,5}))
 print(type((1,2,3,4,5)))
 print(type({'name': 'vishva', 'age': 20, 'country': 'india'}))
 print(type(True))
+
 import math
 x1 , y1 = 2 ,3
 x2 , y2 = 10 , 8
