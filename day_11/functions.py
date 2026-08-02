@@ -1,4 +1,5 @@
 #day 11 : functions
+
 #exercise 1
 #1
 def add_two_numbers(a, b):
@@ -6,6 +7,7 @@ def add_two_numbers(a, b):
 
 # Example usage:
 print(add_two_numbers(5, 7))  
+print(add_two_numbers(-3, 10))
 
 #2
 import math
@@ -64,3 +66,4 @@ def calculate_slope(x1, y1, x2, y2):
 
 # Example usage:
 print(calculate_slope(1, 2, 3, 4))
+print(calculate_slope(2, 3, 2, 5))  # This will raise an error
