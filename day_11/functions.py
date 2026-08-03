@@ -66,4 +66,39 @@ def calculate_slope(x1, y1, x2, y2):
 
 # Example usage:
 print(calculate_slope(1, 2, 3, 4))
-print(calculate_slope(2, 3, 2, 5))  # This will raise an error
+
+
+def solve_quadratic_eqn(a, b, c):
+    """
+    Calculates the solution set of a quadratic equation ax^2 + bx + c = 0.
+    """
+    # Check if it's a valid quadratic equation
+    if a == 0:
+        if b == 0:
+            return () if c != 0 else ("Infinite solutions",)
+        return (-c / b,)
+
+    # Calculate the discriminant
+    discriminant = b**2 - 4*a*c
+
+    # Two real solutions
+    if discriminant > 0:
+        x1 = (-b + discriminant**0.5) / (2 * a)
+        x2 = (-b - discriminant**0.5) / (2 * a)
+        return (x1, x2)
+    
+    # One real solution (double root)
+    elif discriminant == 0:
+        x = -b / (2 * a)
+        return (x,)
+    
+    # Two complex solutions
+    else:
+        real_part = -b / (2 * a)
+        imag_part = (abs(discriminant)**0.5) / (2 * a)
+        return (complex(real_part, imag_part), complex(real_part, -imag_part))
+
+# --- Examples of use ---
+print("Two real roots:", solve_quadratic_eqn(1, -5, 6))    # x^2 - 5x + 6 = 0 -> (3.0, 2.0)
+print("One real root:", solve_quadratic_eqn(1, -6, 9))     # x^2 - 6x + 9 = 0 -> (3.0,)
+print("Complex roots:", solve_quadratic_eqn(1, 1, 1))      # x^2 + x + 1 = 0  -> ((-0.5+0.866j), (-0.5-0.866j))
