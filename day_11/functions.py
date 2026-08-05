@@ -67,7 +67,7 @@ def calculate_slope(x1, y1, x2, y2):
 # Example usage:
 print(calculate_slope(1, 2, 3, 4))
 
-
+#7
 def solve_quadratic_eqn(a, b, c):
     """
     Calculates the solution set of a quadratic equation ax^2 + bx + c = 0.
@@ -102,3 +102,13 @@ def solve_quadratic_eqn(a, b, c):
 print("Two real roots:", solve_quadratic_eqn(1, -5, 6))    # x^2 - 5x + 6 = 0 -> (3.0, 2.0)
 print("One real root:", solve_quadratic_eqn(1, -6, 9))     # x^2 - 6x + 9 = 0 -> (3.0,)
 print("Complex roots:", solve_quadratic_eqn(1, 1, 1))      # x^2 + x + 1 = 0  -> ((-0.5+0.866j), (-0.5-0.866j))
+
+#8
+def print_list(lst):
+    for item in lst:
+        print(item)
+# Create a sample list
+my_fruits = ["Apple", "Banana", "Cherry"]
+
+# Call the function
+print_list(my_fruits)
